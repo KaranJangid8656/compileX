@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CompileX - AI Chatbot</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css"/>
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h1>CompileX</h1>
+      <p>Your AI Programming Assistant</p>
+    </div>
+
+    <div class="chat-messages" id="chat-messages">
+      <div class="message bot">
+        Hello! I'm CompileX, your AI programming assistant. How can I help you today?
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <div class="input-left">
+        <div class="file-upload-wrapper">
+          <input type="file" id="file-input" multiple aria-label="Attach files" />
+          <label for="file-input" title="Attach files">
+            <i class="fas fa-paperclip"></i>
+          </label>
+        </div>
+
+        <div class="voice-btn-wrapper">
+          <button class="voice-btn" id="voice-btn" title="Voice Input">
+            <i class="fas fa-microphone"></i>
+          </button>
+        </div>
+      </div>
+
+      <input type="text" id="user-input" placeholder="Type your message here..." title="Message Input" />
+      <button onclick="sendMessage()" title="Send">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+
+    <div class="footer">
+      Crafted by Karan 🚁
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
