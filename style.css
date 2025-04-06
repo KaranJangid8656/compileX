@@ -9,7 +9,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
     color: white;
-    height: 100vh;
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
