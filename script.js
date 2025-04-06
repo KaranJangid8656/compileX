@@ -142,3 +142,4 @@ function addMessage(text, sender, isHTML = false) {
 window.addEventListener('DOMContentLoaded', () => {
         addMessage("👋 Hi! How can I assist you today?", 'bot');
 });
+ 
