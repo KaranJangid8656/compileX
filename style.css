@@ -1,7 +1,7 @@
-/* General Reset */
+
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
   }
   
@@ -9,7 +9,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1a1a1a, #0f0f0f);
     color: white;
-    height: 100vh;
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +17,7 @@
   
   .chat-container {
     width: 95%;
-    max-width: 800px;
+    max-width: 750px;
     height: 95vh;
     background: rgba(20, 20, 20, 0.85);
     border-radius: 16px;
@@ -60,7 +60,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
-  /* Safe fallback & blur */
+ 
   @supports ((-webkit-backdrop-filter: blur(12px)) or (backdrop-filter: blur(12px))) {
     .chat-messages {
       background: rgba(255, 255, 255, 0.05);
@@ -101,7 +101,7 @@
     border-radius: 15px 15px 15px 0;
   }
   
-  /* Chat Input */
+ 
   .chat-input {
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@
     background-color: #ff3385;
   }
   
-  /* File & Voice Buttons */
+  
   .voice-btn-wrapper button,
   .file-upload-wrapper label {
     background-color: #1f1f1f;
@@ -163,7 +163,7 @@
     display: none;
   }
   
-  /* Typing animation */
+  
   .typing {
     display: flex;
     gap: 4px;
@@ -195,7 +195,7 @@
     }
   }
   
-  /* Code blocks */
+  
   pre {
     background: #1e1e1e;
     color: #f1f1f1;
@@ -215,7 +215,7 @@
     line-height: 1.5;
   }
   
-  /* Copy button inside code */
+  
   .copy-btn {
     position: absolute;
     top: 10px;
@@ -238,7 +238,7 @@
     background: #27ae60;
   }
   
-  /* Scrollbar styling */
+  
   ::-webkit-scrollbar {
     width: 8px;
   }

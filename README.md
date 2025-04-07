@@ -100,4 +100,4 @@ Then visit http://localhost:8000 in your browser
   - Flask-CORS for handling cross-origin requests
   - Font Awesome for icons
 
-## Made by Karan 🚁 
+## Made by Karan 🚁

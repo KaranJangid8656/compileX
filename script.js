@@ -3,12 +3,10 @@ const userInput = document.getElementById('user-input');
 const voiceBtn = document.getElementById('voice-btn');
 const fileInput = document.getElementById('file-input');
 
-// Handle Enter key
 userInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') sendMessage();
 });
 
-// Handle file upload
 fileInput.addEventListener('change', (e) => {
     const files = e.target.files;
     if (files.length > 0) {
@@ -17,7 +15,6 @@ fileInput.addEventListener('change', (e) => {
     }
 });
 
-// Voice input using SpeechRecognition
 let recognition;
 let isListening = false;
 
@@ -63,7 +60,6 @@ voiceBtn.addEventListener('click', () => {
     }
 });
 
-// Send user message to backend
 async function sendMessage() {
     const message = userInput.value.trim();
     if (!message) return;
@@ -95,7 +91,6 @@ async function sendMessage() {
     }
 }
 
-// Add chat message
 function addMessage(text, sender, isHTML = false) {
     const messageDiv = document.createElement('div');
     messageDiv.className = `message ${sender} fade-in`;
@@ -138,7 +133,7 @@ function addMessage(text, sender, isHTML = false) {
     return messageDiv;
 }
 
-// Show welcome message on load
 window.addEventListener('DOMContentLoaded', () => {
         addMessage("👋 Hi! How can I assist you today?", 'bot');
 });
+ 
