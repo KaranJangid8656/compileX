@@ -4,7 +4,7 @@ A modern chatbot powered by Google's Gemini AI, designed to help with programmin
 
 ## Project Structure
 
-```
+``` 
 compile-x/
 │
 ├── index.html                # Main HTML file with chatbot interface
